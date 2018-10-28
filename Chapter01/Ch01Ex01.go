@@ -10,9 +10,10 @@ import (
 func main() {
 	program_name := os.Args[0]
 	optional_args := os.Args[1:]
-	args_str := ""
 
 	fmt.Println("Program name: " + program_name)
-	if len(optional_args) != 0
+	// It would be nice to only print "Args: " if args were actually
+	// provided by the user, but for that we need if statements (not yet
+	// covered in the textbook
 	fmt.Println("Args: " + strings.Join(optional_args, " "))
 }
